@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ABSN Gậy Bia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/LoginCss.css" asp-append-version="true" />
+    
+	<script src="~/js/site.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">ABSN Gậy Bia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/">Trang chủ</a></li>
+                        <li class="nav-item"> <a class="nav-link" asp-controller="Products" asp-action="Index">Sản phẩm</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="/lienhe">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <form class="d-flex mx-auto" action="@Url.Action("Index", "Products")" method="get">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm..." name="query" value="@ViewBag.Query">
+                        <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+                    </form>
+
+                    <ul class="navbar-nav ms-auto">
+                        
+                        <a class="nav-link" href="/cart">
+                            <i class="bi bi-cart"></i> Giỏ hàng (<span id="cart-count">0</span>)
+                        </a>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Login">
+                                <i class="bi bi-person-circle"></i> Đăng nhập
+                            </a>
+
+
+                        </li>
+                        >
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main" class="container py-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-3">
+                <h5>Danh mục sản phẩm</h5>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="/products?category=1">Gậy cơ bản</a></li>
+                    <li class="list-group-item"><a href="/products?category=2">Gậy chuyên nghiệp</a></li>
+                    <li class="list-group-item"><a href="/products?category=3">Phụ kiện</a></li>
+                </ul>
+            </aside>
+            <!-- Main Section -->
+            <section class="col-md-9">
+                @RenderBody()
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 ABSN Gậy Bia.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

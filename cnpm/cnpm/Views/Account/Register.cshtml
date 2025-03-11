@@ -1,0 +1,18 @@
+﻿@model cnpm.ViewModels.RegisterViewModel
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+<div class="form-container">
+    <h2>Đăng Ký</h2>
+    <form method="post">
+        <input type="text" asp-for="Username" placeholder="Tên đăng nhập" required />
+        <input type="email" asp-for="Email" placeholder="Email" required />
+        <input type="password" asp-for="Password" placeholder="Mật khẩu" required />
+        <input type="password" asp-for="ConfirmPassword" placeholder="Nhập lại mật khẩu" required />
+        <button type="submit">Đăng Ký</button>
+    </form>
+
+    <p>Bạn đã có tài khoản? <a asp-controller="Account" asp-action="Login">Đăng nhập ngay</a></p>
+</div>

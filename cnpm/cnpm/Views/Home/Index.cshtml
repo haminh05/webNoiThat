@@ -1,0 +1,83 @@
+﻿@model X.PagedList.IPagedList<cnpm.Models.Product>
+@using X.PagedList.Mvc.Core
+
+@{
+    int page = ViewBag.Page ?? 1;
+    int totalPages = ViewBag.TotalPages ?? 1;
+}
+
+<h1>Danh sách Sản Phẩm</h1>
+
+<!-- Form tìm kiếm -->
+<form class="d-flex mb-4" action="@Url.Action("Index", "Products")" method="get">
+    <input class="form-control me-2" type="search" name="query" placeholder="Tìm kiếm sản phẩm..." value="@ViewBag.Query">
+    <button class="btn btn-outline-primary" type="submit">Tìm kiếm</button>
+</form>
+
+<!-- Hiển thị thông báo nếu không có kết quả -->
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <h4 class="text-danger">@ViewBag.Message</h4>
+    return; // Kết thúc View tại đây nếu không có sản phẩm
+}
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img class="card-img-top product-image" src="@Url.Content(item.ImagePath)" alt="@item.Name">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a asp-controller="Products" asp-action="ProductDetail" asp-route-id="@item.ProductId" class="text-decoration-none text-dark">
+                            @item.Name
+                        </a>
+                    </h5>
+                    <p class="card-text">@item.Description</p>
+                    <p class="card-text"><strong>Giá: @item.Price.ToString("N0") VND</strong></p>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                        <button class="btn btn-outline-success add-to-cart"
+                                data-id="@item.ProductId"
+                                data-name="@item.Name"
+                                data-image="@item.ImagePath"
+                                data-price="@item.Price">
+                            Thêm vào giỏ hàng
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+<!-- Phân trang -->
+@if (totalPages > 1)
+{
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            @if (page > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("Index", new { page = page - 1, query = ViewBag.Query })">Trước</a>
+                </li>
+            }
+
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == page ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { page = i, query = ViewBag.Query })">@i</a>
+                </li>
+            }
+
+            @if (page < totalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("Index", new { page = page + 1, query = ViewBag.Query })">Sau</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}

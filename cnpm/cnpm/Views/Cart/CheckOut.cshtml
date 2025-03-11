@@ -1,0 +1,47 @@
+﻿@model List<cnpm.ViewModels.CartItemViewModel>
+
+<h2>Xác nhận đơn hàng</h2>
+
+@if (!Model.Any())
+{
+    <p class="alert alert-warning">Bạn chưa chọn sản phẩm nào để thanh toán.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><img src="@item.ImageUrl" alt="@item.ProductName" width="50" class="img-thumbnail"></td>
+                    <td>@item.ProductName</td>
+                    <td>@item.Price.ToString("N0") VND</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Price.ToString("#,##0") VNĐ</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-end">
+        <h4 class="fw-bold">Tổng tiền: <span class="text-danger">@Model.Sum(i => i.Price * i.Quantity).ToString("#,##0") VNĐ</span></h4>
+
+    </div>
+
+    <div class="d-flex justify-content-between mt-3">
+        <a asp-controller="Cart" asp-action="Index" class="btn btn-secondary">Quay lại giỏ hàng</a>
+        <form asp-controller="Order" asp-action="PlaceOrder" method="post">
+            <button type="submit" class="btn btn-success btn-lg">Xác nhận thanh toán</button>
+        </form>
+    </div>
+}

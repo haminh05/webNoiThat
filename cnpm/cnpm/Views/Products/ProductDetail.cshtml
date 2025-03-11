@@ -1,0 +1,119 @@
+﻿@model cnpm.Models.Product 
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Hình ảnh sản phẩm -->
+        <div class="col-md-5">
+            <img src="@Model.ImagePath" alt="@Model.Name" class="img-fluid rounded shadow">
+
+        </div>
+
+        <!-- Thông tin sản phẩm -->
+        <div class="col-md-7">
+            <h2 class="product-title">@Model.Name</h2>
+            <p class="text-muted">@Model.Description</p>
+            <h4 class="text-danger">@Model.Price.ToString("N0") VNĐ</h4>
+            <!-- Thông tin chi tiết sản phẩm -->
+            <div class="card product-details mt-3">
+                <div class="card-header bg-primary text-white">Thông tin chi tiết</div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Chất liệu:</strong> @Model.ProductDetail.Material</li>
+                        <li class="list-group-item"><strong>Trọng lượng:</strong> @Model.ProductDetail.Weight kg</li>
+                        <li class="list-group-item"><strong>Chiều dài:</strong> @Model.ProductDetail.Length cm</li>
+                        <li class="list-group-item"><strong>Xuất xứ:</strong> @Model.ProductDetail.Origin</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Form thêm vào giỏ hàng -->
+            <form method="post" asp-controller="Cart" asp-action="AddToCart">
+                <input type="hidden" name="productId" value="@Model.ProductId" />
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Số lượng</label>
+                    <input type="number" name="quantity" id="quantity" value="1" min="1" max="@Model.Stock" class="form-control w-25">
+                </div>
+  
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+                </button>
+    
+                <button type="submit" class="btn btn-danger ms-2" formaction="@Url.Action("BuyNow", "Cart")">
+                    <i class="fas fa-bolt"></i> Mua ngay
+                </button>
+            </form>
+        </div>
+        <div>
+            <!--tạo khoảng cách-->
+        </div> 
+
+
+        <div>
+            <!-- Đánh giá sản phẩm -->
+            <h5>Đánh giá sản phẩm</h5>
+            <div>
+                @if (Model.Reviews.Any())
+                {
+                    @foreach (var review in Model.Reviews)
+                    {
+                        <div class="border p-3 my-2 rounded review-card">
+                            <p><strong>@review.User.Username</strong> - @(review.ReviewDate.HasValue ? review.ReviewDate.Value.ToShortDateString() : "N/A")</p>
+                            <p>⭐ @review.Rating / 5</p>
+                            <p>@review.Comment</p>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted">Chưa có đánh giá nào.</p>
+                }
+            </div>
+            <hr>
+            <h4>Sản phẩm khác</h4>
+            <div class="row">
+                @if (ViewBag.RelatedProducts != null)
+                {
+                    foreach (var relatedProduct in ViewBag.RelatedProducts)
+                    {
+                        <div class="col-md-3">
+                            <div class="card mb-4">
+                                <img src="@relatedProduct.ImagePath" class="card-img-top product-image" alt="@relatedProduct.Name">
+                                <div class="card-body">
+                                    <h6 class="card-title">@relatedProduct.Name</h6>
+                                    <p class="text-danger">@relatedProduct.Price.ToString("C")</p>
+                                    <a href="@Url.Action("ProductDetail", "Products", new { id = relatedProduct.ProductId })" class="btn btn-sm btn-primary">
+                                        Xem chi tiết
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted">Không có sản phẩm nào liên quan.</p>
+                }
+            
+        </div>
+    </div>
+</div>
+
+<!-- CSS -->
+<style>
+    .product-title {
+        font-weight: bold;
+        color: #333;
+    }
+    .product-details {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .review-card {
+        background: #f9f9f9;
+        border-left: 5px solid #007bff;
+    }
+</style>

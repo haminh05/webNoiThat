@@ -1,0 +1,16 @@
+﻿@model cnpm.ViewModels.LoginViewModel
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+<div class="form-container">
+    <h2>Đăng Nhập</h2>
+    <form method="post">
+        <input type="text" asp-for="Username" placeholder="Tên đăng nhập" required />
+        <input type="password" asp-for="Password" placeholder="Mật khẩu" required />
+        <button type="submit">Đăng Nhập</button>
+    </form>
+
+    <p>Bạn chưa có tài khoản? <a asp-controller="Account" asp-action="Register">Đăng ký ngay</a></p>
+</div>

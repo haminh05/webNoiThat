@@ -1,0 +1,30 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.product-image {
+    width: 100%; /* Đảm bảo ảnh rộng bằng thẻ cha */
+    height: 200px; /* Giữ chiều cao cố định */
+    object-fit: cover; /* Cắt ảnh để giữ đúng tỉ lệ mà không bị méo */
+    border-radius: 8px; /* Bo góc ảnh nhẹ */
+    display: block; /* Đảm bảo ảnh không bị lỗi hiển thị */
+}
+
