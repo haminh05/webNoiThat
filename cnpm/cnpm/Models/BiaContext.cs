@@ -31,9 +31,11 @@ public partial class BiaContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
+    public virtual DbSet<UserInformation> UserInformations { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=MIGULAP\\MSSQLSERVER01;Initial Catalog=bia;Integrated Security=True;TrustServerCertificate=True;Connect Timeout=30;Application Intent=ReadWrite;MultiSubnetFailover=False");
+        => optionsBuilder.UseSqlServer("Data Source=MIGULAP\\MSSQLSERVER01;Initial Catalog=bia;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -170,6 +172,25 @@ public partial class BiaContext : DbContext
             entity.Property(e => e.PasswordHash).HasMaxLength(255);
             entity.Property(e => e.Role).HasMaxLength(20);
             entity.Property(e => e.Username).HasMaxLength(50);
+        });
+
+        modelBuilder.Entity<UserInformation>(entity =>
+        {
+            entity.HasKey(e => e.UserInformationId).HasName("PK__UserInfo__85D6D64C6BF96613");
+
+            entity.ToTable("UserInformation");
+
+            entity.HasIndex(e => e.UserId, "UQ__UserInfo__1788CCADD734EEA2").IsUnique();
+
+            entity.Property(e => e.UserInformationId).HasColumnName("UserInformationID");
+            entity.Property(e => e.FullName).HasMaxLength(100);
+            entity.Property(e => e.PhoneNumber).HasMaxLength(15);
+            entity.Property(e => e.ShippingAddress).HasMaxLength(255);
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(d => d.User).WithOne(p => p.UserInformation)
+                .HasForeignKey<UserInformation>(d => d.UserId)
+                .HasConstraintName("FK__UserInfor__UserI__74AE54BC");
         });
 
         OnModelCreatingPartial(modelBuilder);

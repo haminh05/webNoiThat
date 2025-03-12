@@ -29,22 +29,20 @@
                     </ul>
                 </div>
             </div>
+            <div>
             <!-- Form thêm vào giỏ hàng -->
-            <form method="post" asp-controller="Cart" asp-action="AddToCart">
-                <input type="hidden" name="productId" value="@Model.ProductId" />
-                <div class="mb-3">
-                    <label for="quantity" class="form-label">Số lượng</label>
-                    <input type="number" name="quantity" id="quantity" value="1" min="1" max="@Model.Stock" class="form-control w-25">
-                </div>
-  
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
-                </button>
-    
-                <button type="submit" class="btn btn-danger ms-2" formaction="@Url.Action("BuyNow", "Cart")">
-                    <i class="fas fa-bolt"></i> Mua ngay
-                </button>
-            </form>
+            <button type="button" class="btn btn-primary add-to-cart"
+                    data-id="@Model.ProductId"
+                    data-name="@Model.Name"
+                    data-image="@Model.ImagePath"
+                    data-price="@Model.Price">
+                <i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng
+            </button>
+                <a href="@Url.Action("Checkout", "Order", new { productId = Model.ProductId })" class="btn btn-success">
+                    Mua ngay
+                </a>
+
+            </div>
         </div>
         <div>
             <!--tạo khoảng cách-->
@@ -116,4 +114,7 @@
         background: #f9f9f9;
         border-left: 5px solid #007bff;
     }
+
+
 </style>
+

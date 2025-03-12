@@ -2,7 +2,7 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-
+/*
     document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".product-card").forEach(card => {
             card.addEventListener("click", function (event) {
@@ -16,7 +16,7 @@
             });
         });
     });
-
+    */
 
 
 

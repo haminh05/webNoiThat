@@ -1,0 +1,27 @@
+﻿@model cnpm.ViewModels.CheckoutViewModel
+
+<h2>Nhập thông tin nhận hàng</h2>
+
+<form asp-action="ConfirmOrder" method="post">
+    <input type="hidden" asp-for="ProductId" />
+    <input type="hidden" asp-for="Price" />
+
+    <label>Sản phẩm:</label>
+    <input type="text" class="form-control" value="@Model.ProductName" readonly />
+
+    <label>Số lượng:</label>
+    <input type="number" class="form-control" asp-for="Quantity" min="1" />
+
+    <h4>Thông tin nhận hàng</h4>
+
+    <label>Họ tên:</label>
+    <input type="text" class="form-control" asp-for="UserInformation.FullName" required />
+
+    <label>Số điện thoại:</label>
+    <input type="text" class="form-control" asp-for="UserInformation.PhoneNumber" required />
+
+    <label>Địa chỉ:</label>
+    <input type="text" class="form-control" asp-for="UserInformation.ShippingAddress" required />
+
+    <button type="submit" class="btn btn-success mt-3">Xác nhận đặt hàng</button>
+</form>
