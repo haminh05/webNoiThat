@@ -1,0 +1,97 @@
+﻿@model List<cnpm.ViewModels.EmployeeViewModel>
+@using cnpm.ViewModels
+
+@{
+    Layout = "~/Views/Admin/Admin_Layout.cshtml";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Thành công!</strong> @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Chú ý!</strong> @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<h2>Quản lý nhân viên</h2>
+
+<div class="mb-3">
+    <a asp-action="CreateEmployee" asp-controller="Admin" class="btn btn-primary">Thêm nhân viên mới</a>
+</div>
+
+<!-- Form tìm kiếm và lọc -->
+<form asp-action="ManageEmployees" method="get" class="mb-3">
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" name="searchString" class="form-control" placeholder="Tìm theo tên hoặc số điện thoại" value="@ViewData["searchString"]" />
+        </div>
+        <div class="col-md-3">
+            <select name="positionFilter" class="form-control">
+                <option value="">Tất cả chức vụ</option>
+                <option value="Staff">Nhân viên hỗ trợ</option>              
+            </select>
+        </div>
+        <div class="col-md-3">
+            <select name="isActiveFilter" class="form-control">
+                <option value="">Tất cả trạng thái</option>
+                <option value="true">Đang hoạt động</option>
+                <option value="false">Ngừng hoạt động</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-info">Lọc</button>
+        </div>
+    </div>
+</form>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tên đăng nhập</th>
+            <th>Họ tên</th>
+            <th>Số điện thoại</th>
+            <th>Chức vụ</th>
+            <th>Ngày bắt đầu</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.Username</td>
+                <td>@employee.FullName</td>
+                <td>@employee.PhoneNumber</td>
+                <td>@employee.Position</td>
+                <td>@employee.StartDate.ToString("dd/MM/yyyy")</td>
+                <td>@(employee.IsActive ? "Đang hoạt động" : "Ngừng hoạt động")</td>
+                
+                <td>
+                        @if (employee.UserId == null)
+                        {
+                        <a href="@Url.Action("CreateUser", "Account", new { employeeId = employee.EmployeeId })" class="btn btn-success btn-sm">Tạo tài khoản</a>
+
+                        }
+                        else
+                        {
+                        <span class="text-success">Đã có tài khoản</span>
+                        }
+                
+                    <a asp-action="EditEmployee" asp-route-id="@employee.EmployeeId" class="btn btn-primary btn-sm">Sửa</a>
+                    <form asp-action="DeleteEmployee" asp-route-id="@employee.EmployeeId" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc muốn xóa nhân viên này?');">
+                        <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

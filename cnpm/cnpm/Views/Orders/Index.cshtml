@@ -1,25 +1,59 @@
-﻿@model IEnumerable<Order>
+﻿@model IEnumerable<cnpm.Models.Order>
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
 
 <h2>Danh sách đơn hàng</h2>
 
-<table class="table">
-    <tr>
-        <th>Mã đơn</th>
-        <th>Ngày đặt</th>
-        <th>Tổng tiền</th>
-        <th>Trạng thái</th>
-        <th>Hành động</th>
-    </tr>
-    @foreach (var order in Model)
-    {
+@if (Model != null && Model.Any())
+{
+    <table class="table">
         <tr>
-            <td>@order.OrderId</td>
-            <td>@order.OrderDate?.ToShortDateString()</td>
-            <td>@order.TotalPrice.ToString("N0") VNĐ</td>
-            <td>@order.Status</td>
-            <td>
-                <a href="@Url.Action("Details", "Orders", new { id = order.OrderId })" class="btn btn-info">Chi tiết</a>
-            </td>
+            <th>Mã đơn</th>
+            <th>Ngày đặt</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
         </tr>
-    }
-</table>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.OrderDate?.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@order.TotalPrice.ToString("N0") VNĐ</td>
+                <td>@order.Status</td>
+                <td>
+                    <a asp-controller="Orders" asp-action="OrderDetail" asp-route-id="@order.OrderId" class="btn btn-info">Chi tiết</a>
+                     @if (order.Status == "Pending" || order.Status == "Shipping")
+                {
+                    <form asp-controller="Orders" asp-action="CancelOrder" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@order.OrderId" />
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn hủy đơn hàng này?');">
+                            Hủy đơn hàng
+                        </button>
+                    </form>
+                }
+                    @if (order.Status == "Shipping")
+                    {
+                        <form asp-controller="Orders" asp-action="ConfirmReceivedOrder" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@order.OrderId" />
+                            <button type="submit" class="btn btn-success" onclick="return confirm('Bạn có chắc chắn đã nhận hàng?');">
+                                Đã nhận hàng
+                            </button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p class="text-danger">Không có đơn hàng nào.</p>
+}

@@ -1,0 +1,97 @@
+﻿@model List<UserViewModel>
+@using cnpm.ViewModels
+<h2>Quản lý tài khoản</h2>
+@{
+    Layout = "~/Views/Admin/Admin_Layout.cshtml";
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<!-- Form tìm kiếm và lọc -->
+<form method="get" asp-action="Manage">
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <input type="text" name="search" class="form-control" placeholder="Tìm kiếm..." value="@ViewBag.Search" />
+        </div>
+        <div class="col-md-4">
+            <select name="roleFilter" class="form-control" asp-items="ViewBag.RoleList"></select>
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+           
+        </div>
+    </div>
+</form>
+
+<!-- Danh sách tài khoản -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên đăng nhập</th>
+            <th>Email</th>
+            <th>Họ tên</th>
+            <th>Số điện thoại</th>
+            <th>Vai trò</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserId</td>
+                <td>@user.Username</td>
+                <td>@user.Email</td>
+                <td>@user.FullName</td>
+                <td>@user.PhoneNumber</td>
+                <td>@user.Role</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@user.UserId" class="btn btn-primary">Sửa</a>
+                    @if (Context.Session.GetString("Role") == "Admin")
+                    {
+                        @if (user.Role == "Employee" && string.IsNullOrEmpty(user.FullName))
+                        {
+                            <a asp-action="AddEmployee" asp-controller="Admin" asp-route-id ="@user.UserId" class="btn btn-info">Thêm thông tin</a>
+                        }
+                        @if (user.Role == "Employee")
+                        {
+                            <form asp-action="ToggleEmployeeStatus" asp-controller="Admin" method="post" style="display:inline;">
+                                <input type="hidden" name="userId" value="@user.UserId" />
+                                <button type="submit" class="btn @(user.IsActive == true ? "btn-warning" : "btn-success")">
+                                    @(user.IsActive == true ? "Vô hiệu hóa" : "Kích hoạt")
+                                </button>
+                            </form>
+                        }
+                        @if (user.Role != "Admin")
+                        {
+                            <form asp-action="DeleteAccount" asp-route-id="@user.UserId" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc muốn xóa tài khoản này?');">
+                                <button type="submit" class="btn btn-danger">Xóa</button>
+                            </form>
+                        }
+
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Phân trang -->
+<div>
+    Trang @(ViewBag.CurrentPage) / @(ViewBag.TotalPages)
+    @if (ViewBag.CurrentPage > 1)
+    {
+        <a asp-action="Manage" asp-route-page="@(ViewBag.CurrentPage - 1)" asp-route-search="@ViewBag.Search" asp-route-roleFilter="@ViewBag.RoleFilter" class="btn btn-secondary">Trước</a>
+    }
+    @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+    {
+        <a asp-action="Manage" asp-route-page="@(ViewBag.CurrentPage + 1)" asp-route-search="@ViewBag.Search" asp-route-roleFilter="@ViewBag.RoleFilter" class="btn btn-secondary">Sau</a>
+    }
+</div>

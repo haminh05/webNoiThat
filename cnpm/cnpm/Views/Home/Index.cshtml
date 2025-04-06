@@ -5,14 +5,19 @@
     int page = ViewBag.Page ?? 1;
     int totalPages = ViewBag.TotalPages ?? 1;
 }
+@if (TempData["Error"] != null)
+{
+    TempData.Keep("Error");
+     <!-- SỬA LỖI Ở ĐÂY -->
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Chú ý!</strong> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
 
-<h1>Danh sách Sản Phẩm</h1>
 
-<!-- Form tìm kiếm -->
-<form class="d-flex mb-4" action="@Url.Action("Index", "Products")" method="get">
-    <input class="form-control me-2" type="search" name="query" placeholder="Tìm kiếm sản phẩm..." value="@ViewBag.Query">
-    <button class="btn btn-outline-primary" type="submit">Tìm kiếm</button>
-</form>
+
+<h1>Danh sách Sản Phẩm TRANG INDEX HOME</h1>
 
 <!-- Hiển thị thông báo nếu không có kết quả -->
 @if (!string.IsNullOrEmpty(ViewBag.Message))
@@ -21,7 +26,7 @@
     return; // Kết thúc View tại đây nếu không có sản phẩm
 }
 
-<div class="row">
+<div class="row justify-content-center">
     @foreach (var item in Model)
     {
         <div class="col-md-4 mb-4">
@@ -36,7 +41,10 @@
                     <p class="card-text">@item.Description</p>
                     <p class="card-text"><strong>Giá: @item.Price.ToString("N0") VND</strong></p>
                     <div class="d-flex justify-content-between">
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                        <a href="@Url.Action("Checkout", "Orders", new { ProductId = item.ProductId })" class="btn btn-success">
+                            Mua ngay
+                        </a>
+
                         <button class="btn btn-outline-success add-to-cart"
                                 data-id="@item.ProductId"
                                 data-name="@item.Name"

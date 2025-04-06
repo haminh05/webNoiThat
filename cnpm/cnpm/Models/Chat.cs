@@ -11,6 +11,10 @@ public partial class Chat
 
     public int? ReceiverId { get; set; }
 
+    public string? SenderName { get; set; }
+
+    public string? ReceiverName { get; set; }
+
     public string Message { get; set; } = null!;
 
     public DateTime? Timestamp { get; set; }

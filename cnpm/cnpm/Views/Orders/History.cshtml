@@ -1,0 +1,76 @@
+﻿@model List<cnpm.Models.Order>
+
+@{
+    ViewData["Title"] = "Lịch Sử Mua Hàng";
+}
+
+<h2 class="text-center">Lịch Sử Mua Hàng</h2>
+
+@if (!Model.Any())
+{
+    <p class="text-muted text-center">Bạn chưa có đơn hàng nào.</p>
+}
+else
+{
+    @foreach (var order in Model)
+    {
+        <div class="card mb-4">
+            <div class="card-header bg-light">
+                <strong>Đơn hàng #@order.OrderId</strong> -
+                <span class="badge @(order.Status == "Completed" ? "bg-success" : "bg-danger")">
+                    @order.Status
+                </span>
+                <span class="float-end">
+                    Ngày đặt hàng: @(order.OrderDate.HasValue ? order.OrderDate.Value.ToString("dd/MM/yyyy HH:mm") : "Không xác định")
+                </span>
+
+            </div>
+
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Đánh giá</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in order.OrderDetails)
+                        {
+                            <tr>
+                                <td>@item.Product.Name</td>
+                                <td>@item.UnitPrice.ToString("N0") VNĐ</td>
+                                <td>@item.Quantity</td>
+                                <td>@((item.UnitPrice * item.Quantity).ToString("N0")) VNĐ</td>
+                                <td>
+                                    @if (order.Status == "Completed" && !ViewBag.ReviewedProducts.Contains(item.ProductId))
+                                    {
+                                        <a href="@Url.Action("ProductDetail", "Products", new { id = item.ProductId })" class="btn btn-warning btn-sm">
+                                            Viết đánh giá
+                                        </a>
+                                    }
+                                    else {
+                                        <a href="@Url.Action("ProductDetail", "Products", new { id = item.ProductId })" class="btn btn-secondary btn-sm">
+                                            Đã đánh giá
+                                        </a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <!-- Nút mua lại -->
+                <div class="text-end">
+                    <a href="@Url.Action("Reorder", "Orders", new { orderId = order.OrderId })" class="btn btn-primary">
+                        Mua lại
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+
+}

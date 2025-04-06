@@ -5,44 +5,120 @@
       "PackagePath": "staticwebassets\\cnpm.bundle.scp.css"
     },
     {
-      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\Longoni.webp",
-      "PackagePath": "staticwebassets\\Image\\Longoni.webp"
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\BanHocGapGon_2.webp",
+      "PackagePath": "staticwebassets\\Image\\BanHocGapGon_2.webp"
     },
     {
-      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\adam.jpg",
-      "PackagePath": "staticwebassets\\Image\\adam.jpg"
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\BanLamGo_1.jpg",
+      "PackagePath": "staticwebassets\\Image\\BanLamGo_1.jpg"
     },
     {
-      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\basic.jpg",
-      "PackagePath": "staticwebassets\\Image\\basic.jpg"
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\BanTraCuongLuc_3.jpg",
+      "PackagePath": "staticwebassets\\Image\\BanTraCuongLuc_3.jpg"
     },
     {
-      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\gayFury.png",
-      "PackagePath": "staticwebassets\\Image\\gayFury.png"
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\Bo-Ban-an-6-ghe_3.jpg",
+      "PackagePath": "staticwebassets\\Image\\Bo-Ban-an-6-ghe_3.jpg"
     },
     {
-      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\lucaci.webp",
-      "PackagePath": "staticwebassets\\Image\\lucaci.webp"
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\Ghe-ergonomic-cong-thai-hoc.jpg",
+      "PackagePath": "staticwebassets\\Image\\Ghe-ergonomic-cong-thai-hoc.jpg"
     },
     {
-      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\mezz.jpg",
-      "PackagePath": "staticwebassets\\Image\\mezz.jpg"
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\Logo\\logonoithat.png",
+      "PackagePath": "staticwebassets\\Image\\Logo\\logonoithat.png"
     },
     {
-      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\molinari.webp",
-      "PackagePath": "staticwebassets\\Image\\molinari.webp"
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\Sofa-nhung-.jpg",
+      "PackagePath": "staticwebassets\\Image\\Sofa-nhung-.jpg"
     },
     {
-      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\peri.jpg",
-      "PackagePath": "staticwebassets\\Image\\peri.jpg"
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\SofaGocL.jpg",
+      "PackagePath": "staticwebassets\\Image\\SofaGocL.jpg"
     },
     {
-      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\pro1.jpg",
-      "PackagePath": "staticwebassets\\Image\\pro1.jpg"
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\aaaaaaaaaa.png",
+      "PackagePath": "staticwebassets\\Image\\aaaaaaaaaa.png"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\asus-rog-chariot-rgb.jpg",
+      "PackagePath": "staticwebassets\\Image\\asus-rog-chariot-rgb.jpg"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\ban-an-go-nguyen-khoi.jpg",
+      "PackagePath": "staticwebassets\\Image\\ban-an-go-nguyen-khoi.jpg"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\ddddd.png",
+      "PackagePath": "staticwebassets\\Image\\ddddd.png"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\ghe-an-go-tu-nhien-gr-caro-1-1.jpg",
+      "PackagePath": "staticwebassets\\Image\\ghe-an-go-tu-nhien-gr-caro-1-1.jpg"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\ghe-sofa-don.jpg",
+      "PackagePath": "staticwebassets\\Image\\ghe-sofa-don.jpg"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\giuong-gap.jpg",
+      "PackagePath": "staticwebassets\\Image\\giuong-gap.jpg"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\giuong-ngu-go-pallet-1.png",
+      "PackagePath": "staticwebassets\\Image\\giuong-ngu-go-pallet-1.png"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\giuong-tang-da-nag.jpg",
+      "PackagePath": "staticwebassets\\Image\\giuong-tang-da-nag.jpg"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\giuongDa.jpg",
+      "PackagePath": "staticwebassets\\Image\\giuongDa.jpg"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\giuongGoSoi.jpg",
+      "PackagePath": "staticwebassets\\Image\\giuongGoSoi.jpg"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\sofa-giuong.jpg",
+      "PackagePath": "staticwebassets\\Image\\sofa-giuong.jpg"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\sofa-thu-gian-bap-benh.jpg",
+      "PackagePath": "staticwebassets\\Image\\sofa-thu-gian-bap-benh.jpg"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\sofa-vang-da-.webp",
+      "PackagePath": "staticwebassets\\Image\\sofa-vang-da-.webp"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\sofaDaBo.webp",
+      "PackagePath": "staticwebassets\\Image\\sofaDaBo.webp"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\sss.png",
+      "PackagePath": "staticwebassets\\Image\\sss.png"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\Image\\test.png",
+      "PackagePath": "staticwebassets\\Image\\test.png"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\AboutnContact.css",
+      "PackagePath": "staticwebassets\\css\\AboutnContact.css"
     },
     {
       "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\LoginCss.css",
       "PackagePath": "staticwebassets\\css\\LoginCss.css"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\OrdersPage.css",
+      "PackagePath": "staticwebassets\\css\\OrdersPage.css"
+    },
+    {
+      "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\productPage.css",
+      "PackagePath": "staticwebassets\\css\\productPage.css"
     },
     {
       "Id": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\site.css",

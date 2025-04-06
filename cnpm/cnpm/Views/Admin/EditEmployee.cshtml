@@ -1,0 +1,83 @@
+﻿@model cnpm.ViewModels.EmployeeViewModel
+@using cnpm.ViewModels
+
+@{
+    Layout = "~/Views/Admin/Admin_Layout.cshtml";
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+
+<h2>Chỉnh sửa nhân viên</h2>
+
+<form asp-action="EditEmployee" asp-controller="Admin" method="post">
+    <input type="hidden" asp-for="EmployeeId" />
+    <input type="hidden" asp-for="UserId" />
+    <div class="form-group">
+        <label>Tên đăng nhập</label>
+        <p class="form-control-plaintext">@Model.Username</p>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FullName">Họ tên</label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber">Số điện thoại</label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfBirth">Ngày sinh</label>
+        <input asp-for="DateOfBirth" class="form-control" type="date" />
+        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Gender">Giới tính</label>
+        <select asp-for="Gender" class="form-control">
+            <option value="Male">Nam</option>
+            <option value="Female">Nữ</option>
+            <option value="Other">Khác</option>
+        </select>
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Address">Địa chỉ</label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Position">Chức vụ</label>
+        <select asp-for="Position" class="form-control">
+            <option value="Staff">Nhân viên hỗ trợ</option>
+            
+        </select>
+        <span asp-validation-for="Position" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="IdentityCard">CMND/CCCD</label>
+        <input asp-for="IdentityCard" class="form-control" />
+        <span asp-validation-for="IdentityCard" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="IsActive">Trạng thái</label>
+        <select asp-for="IsActive" class="form-control">
+            <option value="true">Đang hoạt động</option>
+            <option value="false">Ngừng hoạt động</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+    <a asp-action="ManageEmployees" asp-controller="Admin" class="btn btn-secondary">Quay lại</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

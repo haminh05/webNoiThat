@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Hỗ trợ khách hàng";
+}
+<h2>Hỗ trợ khách hàng</h2>
+<div id="chat-box">
+    <!-- Tin nhắn sẽ hiển thị ở đây -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+<script>
+$(document).ready(function () {
+    var employeeId = "@User.Identity.Name"; // Đảm bảo chuỗi hợp lệ
+
+    var connection = new signalR.HubConnectionBuilder()
+        .withUrl("/chatHub")
+        .withAutomaticReconnect()
+        .build();
+
+    connection.start().then(function () {
+        console.log("SignalR connected!");
+        connection.invoke("RegisterUser", employeeId) // Đăng ký user trong Hub
+            .catch(function (err) {
+                console.error("Lỗi đăng ký SignalR:", err.toString());
+            });
+    }).catch(function (err) {
+        console.error(err.toString());
+    });
+
+    connection.on("ReceiveMessage", function (senderId, message, senderName) {
+        $("#chat-box").append(
+            `<div>
+    <strong>${senderName}:</strong> ${message}
+    <i>(Vừa nhận)</i>
+</div>`
+        );
+    });
+
+    $("#send-message").click(function () {
+        var message = $("#message-input").val();
+        if (message.trim() === "") return;
+
+        var receiverId = 1; // ID khách hàng cần chat (Sửa lại thành động)
+        var receiverName = "Khách hàng";
+
+        var messageData = {
+            senderId: employeeId,
+            senderName: "Nhân viên",
+            receiverId: receiverId,
+            receiverName: receiverName,
+            message: message
+        };
+
+        connection.invoke("SendMessage", messageData.senderId, messageData.senderName, messageData.receiverId, messageData.message)
+            .then(function () {
+                $("#chat-box").append(
+                    `<div>
+    <strong>Bạn:</strong> ${message}
+    <i>(Đã gửi)</i>
+</div>`
+                );
+                $("#message-input").val("");
+            }).catch(function (err) {
+                console.error(err.toString());
+            });
+
+        $.ajax({
+            url: "/api/chat/send",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(messageData),
+            success: function (response) {
+                console.log("Tin nhắn đã được lưu vào database");
+            },
+            error: function (xhr, status, error) {
+                console.error("Lỗi khi gửi tin nhắn:", error);
+            }
+        });
+    });
+
+    function loadMessages() {
+        $.get(`/api/chat/employee/${employeeId}`, function (data) {
+            $("#chat-box").html("");
+            data.forEach(function (msg) {
+                $("#chat-box").append(
+                    `<div>
+    <strong>${msg.senderName}:</strong> ${msg.message}
+    <i>(${new Date(msg.timestamp).toLocaleTimeString()})</i>
+</div>`
+                );
+            });
+        });
+    }
+
+    loadMessages();
+});
+
+</script>

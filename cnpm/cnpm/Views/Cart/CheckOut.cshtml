@@ -1,4 +1,12 @@
 ﻿@model List<cnpm.ViewModels.CartItemViewModel>
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Chú ý!</strong> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
 
 <h2>Xác nhận đơn hàng</h2>
 
@@ -26,7 +34,7 @@ else
                     <td>@item.ProductName</td>
                     <td>@item.Price.ToString("N0") VND</td>
                     <td>@item.Quantity</td>
-                    <td>@item.Price.ToString("#,##0") VNĐ</td>
+                    <td class="text-success fw-bold total-price">@((item.Price * item.Quantity).ToString("#,##0")) VNĐ</td>
 
                 </tr>
             }
@@ -40,8 +48,49 @@ else
 
     <div class="d-flex justify-content-between mt-3">
         <a asp-controller="Cart" asp-action="Index" class="btn btn-secondary">Quay lại giỏ hàng</a>
-        <form asp-controller="Order" asp-action="PlaceOrder" method="post">
+        <form asp-controller="Orders" asp-action="PlaceOrder" method="post">
             <button type="submit" class="btn btn-success btn-lg">Xác nhận thanh toán</button>
         </form>
     </div>
 }
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const selectAll = document.getElementById('selectAll');
+        const checkboxes = document.querySelectorAll('input[name="selectedProducts"]');
+        const selectedProductsInput = document.getElementById('selectedProductsInput');
+        const checkoutSelectedForm = document.getElementById('checkoutSelectedForm');
+
+        // Cập nhật danh sách sản phẩm đã chọn vào input hidden
+        function updateSelectedProducts() {
+            let selected = [];
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    selected.push(checkbox.value);
+                }
+            });
+            selectedProductsInput.value = selected.join(",");
+        }
+
+        // Chọn tất cả sản phẩm
+        selectAll?.addEventListener('change', function () {
+            checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+            updateSelectedProducts();
+        });
+
+        // Khi chọn hoặc bỏ chọn sản phẩm
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateSelectedProducts);
+        });
+
+        // Trước khi gửi form, kiểm tra danh sách sản phẩm
+        checkoutSelectedForm.addEventListener('submit', function (event) {
+            updateSelectedProducts();
+            if (!selectedProductsInput.value) {
+                alert("Vui lòng chọn ít nhất một sản phẩm để mua!");
+                event.preventDefault();
+            }
+        });
+    });
+</script>

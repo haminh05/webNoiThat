@@ -1,18 +1,102 @@
 ﻿@model cnpm.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/orderspage.css" asp-append-version="true" />
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Chú ý!</strong> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+
 @if (TempData["SuccessMessage"] != null)
 {
     <div class="alert alert-success">@TempData["SuccessMessage"]</div>
 }
 
 <div class="form-container">
-    <h2>Đăng Ký</h2>
-    <form method="post">
-        <input type="text" asp-for="Username" placeholder="Tên đăng nhập" required />
-        <input type="email" asp-for="Email" placeholder="Email" required />
-        <input type="password" asp-for="Password" placeholder="Mật khẩu" required />
-        <input type="password" asp-for="ConfirmPassword" placeholder="Nhập lại mật khẩu" required />
-        <button type="submit">Đăng Ký</button>
+    <h2>@ViewData["Title"]</h2>
+    <form asp-action="Register" method="post">
+        <div class="form-group">
+            <label asp-for="Username"></label>
+            <input asp-for="Username" class="form-control" />
+            <span asp-validation-for="Username" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <div class="input-group">
+               
+                <input asp-for="Password" type="password" class="form-control" id="passwordInput" />
+                <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+                    <i class="bi bi-eye"></i>
+                </button>
+            </div>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ConfirmPassword"></label>
+            <div class="input-group">
+                
+                <input asp-for="ConfirmPassword" type="password" class="form-control" id="confirmPasswordInput" />
+                <button type="button" class="btn btn-outline-secondary" id="toggleConfirmPassword">
+                    <i class="bi bi-eye"></i>
+                </button>
+            </div>
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
     </form>
 
     <p>Bạn đã có tài khoản? <a asp-controller="Account" asp-action="Login">Đăng nhập ngay</a></p>
 </div>
+
+
+@section Scripts {
+    <script>
+        function togglePasswordVisibility(passwordInputId, toggleButtonId) {
+            var passwordInput = document.getElementById(passwordInputId);
+            var toggleButton = document.getElementById(toggleButtonId);
+            var icon = toggleButton.querySelector('i');
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                icon.classList.remove("bi-eye");
+                icon.classList.add("bi-eye-slash");
+            } else {
+                passwordInput.type = "password";
+                icon.classList.remove("bi-eye-slash");
+                icon.classList.add("bi-eye");
+            }
+        }
+
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            togglePasswordVisibility('passwordInput', 'togglePassword');
+        });
+
+        document.getElementById('toggleConfirmPassword').addEventListener('click', function () {
+            togglePasswordVisibility('confirmPasswordInput', 'toggleConfirmPassword');
+        });
+    </script>
+}

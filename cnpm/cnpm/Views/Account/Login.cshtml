@@ -1,16 +1,74 @@
 ﻿@model cnpm.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/orderspage.css" asp-append-version="true" />
+}
+
+@if (ViewData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        <strong>Lỗi:</strong> @ViewData["ErrorMessage"]
+    </div>
+}
+
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+
 @if (TempData["SuccessMessage"] != null)
 {
     <div class="alert alert-success">@TempData["SuccessMessage"]</div>
 }
 
 <div class="form-container">
-    <h2>Đăng Nhập</h2>
-    <form method="post">
-        <input type="text" asp-for="Username" placeholder="Tên đăng nhập" required />
-        <input type="password" asp-for="Password" placeholder="Mật khẩu" required />
-        <button type="submit">Đăng Nhập</button>
+    <h2>@ViewData["Title"]</h2>
+    <form asp-action="Login" method="post">
+        <div class="form-group">
+            <label asp-for="Username"></label>
+            <input asp-for="Username" class="form-control" />
+            <span asp-validation-for="Username" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <div class="input-group">
+                <input asp-for="Password" type="password" class="form-control" id="passwordInput" />
+                <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+                    <i class="bi bi-eye"></i> 
+                </button>
+            </div>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
     </form>
 
     <p>Bạn chưa có tài khoản? <a asp-controller="Account" asp-action="Register">Đăng ký ngay</a></p>
 </div>
+
+@section Scripts {
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            var passwordInput = document.getElementById('passwordInput');
+            var icon = this.querySelector('i');
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                icon.classList.remove("bi-eye");
+                icon.classList.add("bi-eye-slash"); // Đổi icon khi ấn
+            } else {
+                passwordInput.type = "password";
+                icon.classList.remove("bi-eye-slash");
+                icon.classList.add("bi-eye");
+            }
+        });
+    </script>
+}

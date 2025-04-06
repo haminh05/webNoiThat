@@ -3,152 +3,292 @@
   "WorkspaceRootPath": "D:\\StorageC#\\CN2\\cnpm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\admin\\admin_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\admin\\admin_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\userinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\userinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\admin\\index_manage_review.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\admin\\index_manage_review.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\helpers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\helpers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\products\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\products\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\userinformationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\userinformationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\biacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\biacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\reviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\reviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\account\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\account\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\account\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\account\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\admin\\editemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\admin\\editemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\admin\\manageemployees.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\admin\\manageemployees.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\admin\\createemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\admin\\createemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\registeremployeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\registeremployeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\createemployeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\createemployeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\admin\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\admin\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\StorageC#\\CN2\\cnpm\\cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\orders\\manageorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\orders\\manageorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\orders\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\orders\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\orders\\confirmorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\orders\\confirmorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\wwwroot\\css\\orderspage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\wwwroot\\css\\orderspage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\orders\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\orders\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\products\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\products\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\biacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\biacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\wwwroot\\css\\productpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\wwwroot\\css\\productpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\wwwroot\\css\\logincss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\wwwroot\\css\\logincss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\wwwroot\\css\\aboutncontact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\wwwroot\\css\\aboutncontact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\cartcheckoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\cartcheckoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\products\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\products\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\chat\\employeesupport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\chat\\employeesupport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\helpers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\helpers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\migrations\\20250309164905_addproductdetailstable11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\migrations\\20250309164905_addproductdetailstable11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\viewmodels\\userinformationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\viewmodels\\userinformationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\controllers\\userinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\controllers\\userinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\models\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\models\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\migrations\\20250309164125_addproductdetailstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\migrations\\20250309164125_addproductdetailstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\StorageC#\\CN2\\cnpm\\cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\cnpm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -161,14 +301,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\wwwroot\\css\\logincss.css||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\wwwroot\\css\\logincss.css||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\migrations\\20250309164125_addproductdetailstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\migrations\\20250309164125_addproductdetailstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|d:\\storagec#\\cn2\\cnpm\\cnpm\\migrations\\20250309164905_addproductdetailstable11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC0B48AB-655A-4D55-ACFC-467D44B3783F}|cnpm\\cnpm.csproj|solutionrelative:cnpm\\migrations\\20250309164905_addproductdetailstable11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -178,69 +310,174 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SessionExtensions.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Helpers\\SessionExtensions.cs",
-              "RelativeDocumentMoniker": "cnpm\\Helpers\\SessionExtensions.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Helpers\\SessionExtensions.cs",
-              "RelativeToolTip": "cnpm\\Helpers\\SessionExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "DocumentIndex": 14,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "cnpm\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "cnpm\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAA5wA8BAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:47:55.918Z",
+              "WhenOpened": "2025-03-10T09:25:46.459Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\UserViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\UserViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\UserViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T19:21:06.852Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "cnpm\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "cnpm\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAMBAAAAAAAAAIA2wBsBAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T15:12:47.908Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "cnpm\\Controllers\\ReviewsController.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "cnpm\\Controllers\\ReviewsController.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAIwJEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:55:34.097Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserInformationController.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\UserInformationController.cs",
-              "RelativeDocumentMoniker": "cnpm\\Controllers\\UserInformationController.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\UserInformationController.cs",
-              "RelativeToolTip": "cnpm\\Controllers\\UserInformationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T03:44:44.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "cnpm\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "cnpm\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T14:12:49.879Z",
+              "DocumentIndex": 11,
+              "Title": "Manage.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\Manage.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Account\\Manage.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\Manage.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Account\\Manage.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T19:39:45.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "cnpm\\Models\\Review.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Review.cs",
+              "RelativeToolTip": "cnpm\\Models\\Review.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T13:37:40.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T15:14:02.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index_Manage_Review.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\Index_Manage_Review.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Admin\\Index_Manage_Review.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\Index_Manage_Review.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Admin\\Index_Manage_Review.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T13:51:32.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Admin_Layout.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\Admin_Layout.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Admin\\Admin_Layout.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\Admin_Layout.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Admin\\Admin_Layout.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADEAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T15:09:06.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\User.cs",
+              "RelativeDocumentMoniker": "cnpm\\Models\\User.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\User.cs",
+              "RelativeToolTip": "cnpm\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T13:44:35.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReviewViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\ReviewViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\ReviewViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\ReviewViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\ReviewViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:54:27.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CartController.cs",
               "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "cnpm\\Controllers\\CartController.cs",
               "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\CartController.cs",
               "RelativeToolTip": "cnpm\\Controllers\\CartController.cs",
-              "ViewState": "AQIAAHkAAAAAAAAAAAAIwJIAAAAAAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAwwFwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T15:07:58.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Program.cs",
               "RelativeDocumentMoniker": "cnpm\\Program.cs",
               "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Program.cs",
               "RelativeToolTip": "cnpm\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAMwEMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T10:56:47.027Z",
               "EditorCaption": ""
@@ -248,305 +485,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "cnpm\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "cnpm\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAIwGIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T09:25:46.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductDetail.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\ProductDetail.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Products\\ProductDetail.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\ProductDetail.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Products\\ProductDetail.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACgAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T16:20:12.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Account\\Register.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T09:28:43.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T09:29:16.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "cnpm\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "cnpm\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T09:22:48.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CheckoutViewModel.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CheckoutViewModel.cs",
-              "RelativeDocumentMoniker": "cnpm\\ViewModels\\CheckoutViewModel.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CheckoutViewModel.cs",
-              "RelativeToolTip": "cnpm\\ViewModels\\CheckoutViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T04:04:25.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "cnpm\\ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "cnpm\\ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T09:21:12.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CheckOut.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\CheckOut.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Orders\\CheckOut.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\CheckOut.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Orders\\CheckOut.cshtml",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAUwBsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-12T04:04:52.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "cnpm\\Controllers\\OrdersController.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "cnpm\\Controllers\\OrdersController.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAlwGYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T03:26:05.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "cnpm\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "cnpm\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAJsAAAAAAAAAAAAUwKoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T10:46:21.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\Index.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Orders\\Index.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\Index.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Orders\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-12T03:41:28.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "cnpm\\Models\\Order.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Order.cs",
-              "RelativeToolTip": "cnpm\\Models\\Order.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAYwBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T13:02:03.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CartItemViewModel.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CartItemViewModel.cs",
-              "RelativeDocumentMoniker": "cnpm\\ViewModels\\CartItemViewModel.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CartItemViewModel.cs",
-              "RelativeToolTip": "cnpm\\ViewModels\\CartItemViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:06:44.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserInformationViewModel.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\UserInformationViewModel.cs",
-              "RelativeDocumentMoniker": "cnpm\\ViewModels\\UserInformationViewModel.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\UserInformationViewModel.cs",
-              "RelativeToolTip": "cnpm\\ViewModels\\UserInformationViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T03:23:06.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "OrderViewModel.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\OrderViewModel.cs",
-              "RelativeDocumentMoniker": "cnpm\\ViewModels\\OrderViewModel.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\OrderViewModel.cs",
-              "RelativeToolTip": "cnpm\\ViewModels\\OrderViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T03:28:22.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UserInformation.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\UserInformation.cs",
-              "RelativeDocumentMoniker": "cnpm\\Models\\UserInformation.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\UserInformation.cs",
-              "RelativeToolTip": "cnpm\\Models\\UserInformation.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T03:35:41.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ViewModels.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\ViewModels.cs",
-              "RelativeDocumentMoniker": "cnpm\\Models\\ViewModels.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\ViewModels.cs",
-              "RelativeToolTip": "cnpm\\Models\\ViewModels.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T17:18:10.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "BiaContext.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\BiaContext.cs",
-              "RelativeDocumentMoniker": "cnpm\\Models\\BiaContext.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\BiaContext.cs",
-              "RelativeToolTip": "cnpm\\Models\\BiaContext.cs",
-              "ViewState": "AQIAAL4AAAAAAAAAAAAIwLsAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T10:43:30.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "cnpm\\Models\\Product.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Product.cs",
-              "RelativeToolTip": "cnpm\\Models\\Product.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAUwBsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T13:33:39.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Index.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Products\\Index.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Index.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Products\\Index.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAC4AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T13:52:47.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Create.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Products\\Create.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Create.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Products\\Create.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAmwCsAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T13:51:44.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Details.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Products\\Details.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Details.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Products\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T16:10:23.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Edit.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Products\\Edit.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Edit.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Products\\Edit.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAACwAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T13:52:03.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\appsettings.json",
               "RelativeDocumentMoniker": "cnpm\\appsettings.json",
@@ -559,146 +497,680 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACYAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T10:31:28.641Z",
+              "DocumentIndex": 17,
+              "Title": "EmployeeViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\EmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\EmployeeViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\EmployeeViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\EmployeeViewModel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBQAAAB+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T15:42:56.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "cnpm\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "cnpm\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAACwCAAAAAAAAAAAQwDYCAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:26:05.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 16,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAADsAAAAAAAAAAAAQwDcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T09:28:43.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateUser.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\CreateUser.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Account\\CreateUser.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\CreateUser.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Account\\CreateUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T20:32:58.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T09:29:16.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ManageEmployees.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\ManageEmployees.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Admin\\ManageEmployees.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\ManageEmployees.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Admin\\ManageEmployees.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAcwFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T18:09:02.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EditEmployee.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\EditEmployee.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Admin\\EditEmployee.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\EditEmployee.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Admin\\EditEmployee.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T18:02:35.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CreateEmployee.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\CreateEmployee.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Admin\\CreateEmployee.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\CreateEmployee.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Admin\\CreateEmployee.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T18:01:50.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RegisterEmployeeViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\RegisterEmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\RegisterEmployeeViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\RegisterEmployeeViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\RegisterEmployeeViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T20:31:59.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T09:21:12.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateEmployeeViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CreateEmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\CreateEmployeeViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CreateEmployeeViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\CreateEmployeeViewModel.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwB8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T17:57:21.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T09:22:48.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AddEmployee.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\AddEmployee.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Admin\\AddEmployee.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Admin\\AddEmployee.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Admin\\AddEmployee.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T15:45:09.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "cnpm\\Models\\Employee.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Employee.cs",
+              "RelativeToolTip": "cnpm\\Models\\Employee.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAuwBMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:54:04.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "cnpm\\Views\\Cart\\Index.cshtml",
               "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Cart\\Index.cshtml",
               "RelativeToolTip": "cnpm\\Views\\Cart\\Index.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAmwD8AAAAsAAAA",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAADYAAACHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T15:09:43.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T15:09:43.43Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T16:13:03.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "cnpm\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "cnpm\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-09T14:48:01.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "cnpm\\wwwroot\\js\\site.js",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "cnpm\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAQwBcAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-10T05:07:23.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "cnpm.AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs",
-              "RelativeToolTip": "cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T09:35:20.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "cnpm\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "cnpm\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T10:30:59.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
               "Title": "CheckOut.cshtml",
               "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Cart\\CheckOut.cshtml",
               "RelativeDocumentMoniker": "cnpm\\Views\\Cart\\CheckOut.cshtml",
               "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Cart\\CheckOut.cshtml",
               "RelativeToolTip": "cnpm\\Views\\Cart\\CheckOut.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAAaAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-10T15:29:34.989Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CheckoutViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CheckoutViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\CheckoutViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CheckoutViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\CheckoutViewModel.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAwwAoAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:04:25.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "OrderViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\OrderViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\OrderViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\OrderViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\OrderViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:28:22.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CartItemViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CartItemViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\CartItemViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CartItemViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\CartItemViewModel.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T15:06:44.279Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 37,
-              "Title": "cnpm.csproj",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\cnpm.csproj",
-              "RelativeDocumentMoniker": "cnpm\\cnpm.csproj",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\cnpm.csproj",
-              "RelativeToolTip": "cnpm\\cnpm.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-10T15:47:31.384Z"
+              "Title": "ConfirmOrder.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\ConfirmOrder.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Orders\\ConfirmOrder.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\ConfirmOrder.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Orders\\ConfirmOrder.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAE4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T07:44:40.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "OrderDetail.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\OrderDetail.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Orders\\OrderDetail.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\OrderDetail.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Orders\\OrderDetail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T17:51:07.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB8AAACHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T03:41:28.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ManageOrders.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\ManageOrders.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Orders\\ManageOrders.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\ManageOrders.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Orders\\ManageOrders.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAD4AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-24T16:31:26.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "cnpm\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "cnpm\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwEsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T14:12:49.879Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
-              "Title": "20250309133612_FirstUpdateDatabse.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Migrations\\20250309133612_FirstUpdateDatabse.cs",
-              "RelativeDocumentMoniker": "cnpm\\Migrations\\20250309133612_FirstUpdateDatabse.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Migrations\\20250309133612_FirstUpdateDatabse.cs",
-              "RelativeToolTip": "cnpm\\Migrations\\20250309133612_FirstUpdateDatabse.cs",
-              "ViewState": "AQIAAOUAAAAAAAAAAAAzwBIAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T13:36:12.431Z"
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Orders\\Checkout.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\Checkout.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Orders\\Checkout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T04:04:52.358Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
+              "Title": "OrdersPage.css",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\OrdersPage.css",
+              "RelativeDocumentMoniker": "cnpm\\wwwroot\\css\\OrdersPage.css",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\OrdersPage.css",
+              "RelativeToolTip": "cnpm\\wwwroot\\css\\OrdersPage.css",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAD8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-30T14:39:43.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAQwIEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T09:00:31.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\History.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Orders\\History.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Orders\\History.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Orders\\History.cshtml",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAwDUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T08:32:01.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Manage.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Manage.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Products\\Manage.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Manage.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Products\\Manage.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T15:34:52.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BiaContext.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\BiaContext.cs",
+              "RelativeDocumentMoniker": "cnpm\\Models\\BiaContext.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\BiaContext.cs",
+              "RelativeToolTip": "cnpm\\Models\\BiaContext.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA9wCYAAACtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T18:48:06.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "UserInformation.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\UserInformation.cs",
+              "RelativeDocumentMoniker": "cnpm\\Models\\UserInformation.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\UserInformation.cs",
+              "RelativeToolTip": "cnpm\\Models\\UserInformation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:35:41.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "AboutUs.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Home\\AboutUs.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Home\\AboutUs.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Home\\AboutUs.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-19T17:53:01.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAADsAAAAAAAAAAAAcwCQAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T12:46:25.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Products\\Delete.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Products\\Delete.cshtml",
+              "ViewState": "AQIAABMAAAAAAAAAAAAcwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T16:29:53.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "cnpm\\Models\\Order.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Order.cs",
+              "RelativeToolTip": "cnpm\\Models\\Order.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T13:02:03.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "cnpm\\Models\\Product.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Product.cs",
+              "RelativeToolTip": "cnpm\\Models\\Product.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:33:39.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Products\\Details.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Products\\Details.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-09T16:10:23.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "cnpm\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "cnpm\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAcwN4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-10T05:07:23.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Chat.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Chat.cs",
+              "RelativeDocumentMoniker": "cnpm\\Models\\Chat.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\Chat.cs",
+              "RelativeToolTip": "cnpm\\Models\\Chat.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:22:35.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "cnpm\\Models\\OrderDetail.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "cnpm\\Models\\OrderDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T07:51:26.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "cnpm\\Controllers\\ChatController.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "cnpm\\Controllers\\ChatController.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAQwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T12:33:18.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "productPage.css",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\productPage.css",
+              "RelativeDocumentMoniker": "cnpm\\wwwroot\\css\\productPage.css",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\productPage.css",
+              "RelativeToolTip": "cnpm\\wwwroot\\css\\productPage.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-30T15:11:50.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
               "Title": "LoginCss.css",
               "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\LoginCss.css",
               "RelativeDocumentMoniker": "cnpm\\wwwroot\\css\\LoginCss.css",
               "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\LoginCss.css",
               "RelativeToolTip": "cnpm\\wwwroot\\css\\LoginCss.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-10T13:32:32.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T15:02:25.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 57,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "cnpm\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "cnpm\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAACYAAAAAAAAAAAAowEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-25T03:56:39.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "AboutnContact.css",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\AboutnContact.css",
+              "RelativeDocumentMoniker": "cnpm\\wwwroot\\css\\AboutnContact.css",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\AboutnContact.css",
+              "RelativeToolTip": "cnpm\\wwwroot\\css\\AboutnContact.css",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAowGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-19T18:13:07.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "cnpm\\Hubs\\ChatHub.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "cnpm\\Hubs\\ChatHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T12:40:17.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CartCheckoutViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CartCheckoutViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\CartCheckoutViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\CartCheckoutViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\CartCheckoutViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:44:18.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ProductDetail.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\ProductDetail.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Products\\ProductDetail.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\ProductDetail.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Products\\ProductDetail.cshtml",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAQwDEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-09T16:20:12.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T15:46:07.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "EmployeeSupport.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Chat\\EmployeeSupport.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Chat\\EmployeeSupport.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Chat\\EmployeeSupport.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Chat\\EmployeeSupport.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T12:34:39.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "SessionExtensions.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Helpers\\SessionExtensions.cs",
+              "RelativeDocumentMoniker": "cnpm\\Helpers\\SessionExtensions.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Helpers\\SessionExtensions.cs",
+              "RelativeToolTip": "cnpm\\Helpers\\SessionExtensions.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA+wBIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T15:47:55.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20250309164905_AddProductDetailsTable11.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Migrations\\20250309164905_AddProductDetailsTable11.cs",
+              "RelativeDocumentMoniker": "cnpm\\Migrations\\20250309164905_AddProductDetailsTable11.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Migrations\\20250309164905_AddProductDetailsTable11.cs",
+              "RelativeToolTip": "cnpm\\Migrations\\20250309164905_AddProductDetailsTable11.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T16:49:05.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ContactUs.cshtml",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Home\\ContactUs.cshtml",
+              "RelativeDocumentMoniker": "cnpm\\Views\\Home\\ContactUs.cshtml",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Views\\Home\\ContactUs.cshtml",
+              "RelativeToolTip": "cnpm\\Views\\Home\\ContactUs.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-19T18:10:26.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "UserInformationViewModel.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\UserInformationViewModel.cs",
+              "RelativeDocumentMoniker": "cnpm\\ViewModels\\UserInformationViewModel.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\ViewModels\\UserInformationViewModel.cs",
+              "RelativeToolTip": "cnpm\\ViewModels\\UserInformationViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:23:06.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "UserInformationController.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\UserInformationController.cs",
+              "RelativeDocumentMoniker": "cnpm\\Controllers\\UserInformationController.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Controllers\\UserInformationController.cs",
+              "RelativeToolTip": "cnpm\\Controllers\\UserInformationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwA0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:44:44.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "ViewModels.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\ViewModels.cs",
+              "RelativeDocumentMoniker": "cnpm\\Models\\ViewModels.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Models\\ViewModels.cs",
+              "RelativeToolTip": "cnpm\\Models\\ViewModels.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T17:18:10.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
               "Title": "20250309164125_AddProductDetailsTable.cs",
               "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Migrations\\20250309164125_AddProductDetailsTable.cs",
               "RelativeDocumentMoniker": "cnpm\\Migrations\\20250309164125_AddProductDetailsTable.cs",
@@ -710,15 +1182,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "20250309164905_AddProductDetailsTable11.cs",
-              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Migrations\\20250309164905_AddProductDetailsTable11.cs",
-              "RelativeDocumentMoniker": "cnpm\\Migrations\\20250309164905_AddProductDetailsTable11.cs",
-              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Migrations\\20250309164905_AddProductDetailsTable11.cs",
-              "RelativeToolTip": "cnpm\\Migrations\\20250309164905_AddProductDetailsTable11.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "DocumentIndex": 71,
+              "Title": "cnpm.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs",
+              "RelativeToolTip": "cnpm\\obj\\Debug\\net8.0\\cnpm.AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T16:49:05.336Z"
+              "WhenOpened": "2025-03-10T09:35:20.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "cnpm.csproj",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\cnpm.csproj",
+              "RelativeDocumentMoniker": "cnpm\\cnpm.csproj",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\cnpm.csproj",
+              "RelativeToolTip": "cnpm\\cnpm.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T15:47:31.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20250309133612_FirstUpdateDatabse.cs",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Migrations\\20250309133612_FirstUpdateDatabse.cs",
+              "RelativeDocumentMoniker": "cnpm\\Migrations\\20250309133612_FirstUpdateDatabse.cs",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\Migrations\\20250309133612_FirstUpdateDatabse.cs",
+              "RelativeToolTip": "cnpm\\Migrations\\20250309133612_FirstUpdateDatabse.cs",
+              "ViewState": "AQIAAOYAAAAAAAAAAAAAwBIAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:36:12.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "LoginCss.css",
+              "DocumentMoniker": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\LoginCss.css",
+              "RelativeDocumentMoniker": "cnpm\\wwwroot\\css\\LoginCss.css",
+              "ToolTip": "D:\\StorageC#\\CN2\\cnpm\\cnpm\\wwwroot\\css\\LoginCss.css",
+              "RelativeToolTip": "cnpm\\wwwroot\\css\\LoginCss.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-10T13:32:32.572Z"
             }
           ]
         }

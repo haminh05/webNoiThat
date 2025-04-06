@@ -6,6 +6,9 @@ using X.PagedList;
 using X.PagedList.Mvc.Core;
 using System.Linq;
 using X.PagedList.Extensions;
+using System.Globalization;
+using System.Text;
+
 
 namespace cnpm.Controllers
 {
@@ -17,6 +20,23 @@ namespace cnpm.Controllers
         {
             _logger = logger;
         }
+        public static string RemoveDiacritics(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text)) return text;
+            var normalizedString = text.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new StringBuilder();
+
+            foreach (var c in normalizedString)
+            {
+                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+        }
+
 
         public IActionResult Index(string query, int? page)
         {
@@ -25,23 +45,35 @@ namespace cnpm.Controllers
             int pageNumber = page ?? 1;
 
             var products = db.Products.AsQueryable();
-
-            // Nếu có query tìm kiếm
             if (!string.IsNullOrEmpty(query))
             {
-                query = query.Trim();
-                products = products.Where(p => EF.Functions.Like(p.Name, $"%{query}%") ||
-                                               EF.Functions.Like(p.Description, $"%{query}%"));
-            }
+                query = query.Trim().ToLower();
+                var keywords = query.Split(' ');
 
-            // Kiểm tra nếu không có kết quả
-            if (!products.Any())
-            {
-                ViewBag.Message = "Không tìm thấy sản phẩm nào phù hợp.";
-                ViewBag.Query = query;
-                return View();
-            }
+                // Tạo chuỗi tìm kiếm theo dạng %ghế%gỗ%
+                string joinedKeywords = $"%{string.Join("%", keywords)}%";
 
+                // Tìm sản phẩm có chứa nguyên cụm từ
+                products = products.Where(p => EF.Functions.Like(p.Name.ToLower(), joinedKeywords) ||
+                                               EF.Functions.Like(p.Description.ToLower(), joinedKeywords));
+
+                // Nếu không có kết quả, tìm từng từ riêng lẻ
+                if (!products.Any())
+                {
+                    products = db.Products.Where(p =>
+                        keywords.All(k => EF.Functions.Like(p.Name.ToLower(), $"%{k}%") ||
+                                          EF.Functions.Like(p.Description.ToLower(), $"%{k}%"))
+                    );
+                }
+
+                // Nếu vẫn không có kết quả, hiển thị thông báo
+                if (!products.Any())
+                {
+                    ViewBag.Message = "Không tìm thấy sản phẩm nào phù hợp.";
+                    ViewBag.Query = query;
+                    return View();
+                }
+            }
             var pagedProducts = products.OrderBy(p => p.ProductId).ToPagedList(pageNumber, pageSize);
 
             ViewBag.Query = query;
@@ -80,8 +112,15 @@ namespace cnpm.Controllers
 
             return View(product);
         }
-
-
-
+        [HttpGet]
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
     }
 }

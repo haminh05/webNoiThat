@@ -1,4 +1,12 @@
 ﻿@model List<cnpm.ViewModels.CartItemViewModel>
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Chú ý!</strong> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
 
 <div class="container py-4">
     <h2 class="mb-4 text-center">🛒 Giỏ hàng của bạn</h2>
@@ -17,7 +25,7 @@
                 <table class="table table-hover table-bordered align-middle">
                     <thead class="table-dark text-center">
                         <tr>
-                            <th><input type="checkbox" id="selectAll"></th>
+                            <th>Chọn sản phẩm</th>
                             <th>Hình ảnh</th>
                             <th>Tên sản phẩm</th>
                             <th>Giá</th>
@@ -38,15 +46,18 @@
                                 </td>
                                 <td>@item.ProductName</td>
                                 <td class="text-danger fw-bold">@item.Price.ToString("#,##0") VNĐ</td>
+
                                 <td class="text-center">
                                     <input type="number" class="form-control text-center quantity-input" data-id="@item.ProductId"
                                            value="@item.Quantity" min="1" style="width: 80px;">
                                 </td>
+
                                 <td class="text-success fw-bold total-price">@((item.Price * item.Quantity).ToString("#,##0")) VNĐ</td>
                                 <td class="text-center">
-                                    <button type="button" class="btn btn-sm btn-outline-danger remove-btn" data-id="@item.ProductId">
+                                    <a asp-controller="Cart" asp-action="Remove" asp-route-id="@item.ProductId"
+                                       class="btn btn-sm btn-outline-danger">
                                         ❌ Xóa
-                                    </button>
+                                    </a>
                                 </td>
                             </tr>
                         }
@@ -57,20 +68,22 @@
             
         </form>
         <div class="d-flex justify-content-center align-items-center gap-3 mt-3 w-100">
+            <!-- Mua sản phẩm đã chọn -->
             <form id="checkoutSelectedForm" asp-controller="Cart" asp-action="CheckoutSelected" method="post">
+                <input type="hidden" name="selectedProducts" id="selectedProductsInput">
                 <button type="submit" class="btn btn-success btn-lg w-100">
                     🛍 Mua sản phẩm đã chọn
                 </button>
-                <input type="hidden" name="selectedProducts" id="selectedProductsInput">
             </form>
 
-
-            <form asp-controller="Cart" asp-action="CheckoutAll" method="post" class="w-50 text-center">
+            <!-- Mua toàn bộ giỏ hàng -->
+            <form asp-controller="Cart" asp-action="CheckoutAll" method="post">
                 <button type="submit" class="btn btn-primary btn-lg w-100">
                     ✅ Mua toàn bộ giỏ hàng
                 </button>
             </form>
         </div>
+
 
         <h4 class="text-center fw-bold text-danger mt-3">Tổng tiền: <span id="totalAmount">0 VNĐ</span></h4>
 
@@ -79,41 +92,87 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const selectAll = document.getElementById('selectAll');
-        const checkboxes = document.querySelectorAll('input[name="selectedProducts"]');
-        const selectedProductsInput = document.getElementById('selectedProductsInput');
-        const checkoutSelectedForm = document.getElementById('checkoutSelectedForm');
-
-        // Cập nhật danh sách sản phẩm đã chọn vào input hidden
-        function updateSelectedProducts() {
-            let selected = [];
-            checkboxes.forEach(checkbox => {
-                if (checkbox.checked) {
-                    selected.push(checkbox.value);
+    document.addEventListener("DOMContentLoaded", function () {
+        // Hàm cập nhật số lượng
+        function updateQuantity(productId, newQuantity) {
+            fetch('/Cart/UpdateCart', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `id=${productId}&quantity=${newQuantity}`
+            }).then(response => {
+                if (response.ok) {
+                    location.reload(); // Cập nhật giỏ hàng
                 }
             });
-            selectedProductsInput.value = selected.join(",");
         }
 
-        // Chọn tất cả sản phẩm
-        selectAll?.addEventListener('change', function () {
-            checkboxes.forEach(checkbox => checkbox.checked = this.checked);
-            updateSelectedProducts();
+        // Sự kiện nút tăng số lượng
+        document.querySelectorAll(".increment").forEach(button => {
+            button.addEventListener("click", function () {
+                let input = this.closest(".input-group").querySelector(".quantity-input");
+                let newQuantity = parseInt(input.value) + 1;
+                input.value = newQuantity;
+                updateQuantity(this.dataset.id, newQuantity);
+            });
         });
 
-        // Khi chọn hoặc bỏ chọn sản phẩm
-        checkboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', updateSelectedProducts);
+        // Sự kiện nút giảm số lượng
+        document.querySelectorAll(".decrement").forEach(button => {
+            button.addEventListener("click", function () {
+                let input = this.closest(".input-group").querySelector(".quantity-input");
+                let newQuantity = Math.max(1, parseInt(input.value) - 1);
+                input.value = newQuantity;
+                updateQuantity(this.dataset.id, newQuantity);
+            });
         });
 
-        // Trước khi gửi form, kiểm tra danh sách sản phẩm
-        checkoutSelectedForm.addEventListener('submit', function (event) {
-            updateSelectedProducts();
-            if (!selectedProductsInput.value) {
-                alert("Vui lòng chọn ít nhất một sản phẩm để mua!");
-                event.preventDefault();
-            }
+        // Sự kiện nhập số lượng trực tiếp
+        document.querySelectorAll(".quantity-input").forEach(input => {
+            input.addEventListener("change", function () {
+                let newQuantity = Math.max(1, parseInt(this.value));
+                this.value = newQuantity;
+                updateQuantity(this.dataset.id, newQuantity);
+            });
         });
     });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const selectAll = document.getElementById('selectAll');
+    const checkboxes = document.querySelectorAll('input[name="selectedProducts"]');
+    const selectedProductsInput = document.getElementById('selectedProductsInput');
+    const checkoutSelectedForm = document.getElementById('checkoutSelectedForm');
+
+    function updateSelectedProducts() {
+        let selected = [];
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                selected.push(checkbox.value);
+            }
+        });
+        selectedProductsInput.value = selected.join(",");
+    }
+
+    // Xử lý chọn tất cả sản phẩm
+    selectAll?.addEventListener('change', function () {
+        checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+        updateSelectedProducts();
+    });
+
+    // Khi chọn hoặc bỏ chọn sản phẩm
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateSelectedProducts);
+    });
+
+    // Kiểm tra danh sách trước khi gửi form
+    checkoutSelectedForm.addEventListener('submit', function (event) {
+        updateSelectedProducts();
+        if (!selectedProductsInput.value) {
+            alert("Vui lòng chọn ít nhất một sản phẩm để mua!");
+            event.preventDefault();
+        }
+    });
+});
+
 </script>

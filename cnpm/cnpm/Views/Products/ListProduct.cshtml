@@ -1,0 +1,79 @@
+﻿@model X.PagedList.IPagedList<cnpm.Models.Product>
+@using X.PagedList.Mvc.Core
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+    int page = ViewBag.Page ?? 1;
+    int totalPages = ViewBag.TotalPages ?? 1;
+    int? category = ViewBag.Category;
+}
+
+<h1 class="mb-4">Danh sách Sản Phẩm</h1>
+
+
+<!-- Hiển thị nếu không có kết quả -->
+@if (!Model.Any())
+{
+    <h4 class="text-danger">Không tìm thấy sản phẩm nào.</h4>
+}
+else
+{
+    <div class="row justify-content-center">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top product-image" src="@Url.Content(item.ImagePath)" alt="@item.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a asp-controller="Products" asp-action="ProductDetail" asp-route-id="@item.ProductId" class="text-decoration-none text-dark">
+                                @item.Name
+                            </a>
+                        </h5>
+                        <p class="card-text">@item.Description</p>
+                        <p class="card-text"><strong>Giá: @item.Price.ToString("N0") VND</strong></p>
+                        <div class="d-flex justify-content-between">
+                            <a href="@Url.Action("Checkout", "Orders", new { ProductId = item.ProductId })" class="btn btn-success">
+                                Mua ngay
+                            </a>
+                            <button class="btn btn-outline-success add-to-cart"
+                                    data-id="@item.ProductId"
+                                    data-name="@item.Name"
+                                    data-image="@item.ImagePath"
+                                    data-price="@item.Price">
+                                Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+    <!-- Phân trang -->
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            @if (Model.HasPreviousPage)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("ListProduct", new { page = page - 1, query = ViewBag.Query, category = category })">Trước</a>
+                </li>
+            }
+
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == page ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("ListProduct", new { page = i, query = ViewBag.Query, category = category })">@i</a>
+                </li>
+            }
+
+            @if (Model.HasNextPage)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("ListProduct", new { page = page + 1, query = ViewBag.Query, category = category })">Sau</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}

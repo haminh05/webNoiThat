@@ -1,0 +1,106 @@
+﻿/* Căn chỉnh và làm đẹp tiêu đề */
+h3 {
+    color: #2c3e50;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Định dạng container chính */
+.container-About {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Tạo background và viền cho phần liên hệ */
+.contact-info {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+    .contact-info:hover {
+        background: #eef1f4;
+        transform: translateY(-3px);
+    }
+
+    /* Định dạng nội dung liên hệ */
+    .contact-info p {
+        font-size: 17px;
+        margin-bottom: 12px;
+        color: #444;
+    }
+
+    /* Link nút bấm */
+    .contact-info a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 15px;
+        border-radius: 5px;
+        background: #007bff;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .contact-info a:hover {
+            background: #0056b3;
+            text-decoration: none;
+            transform: scale(1.05);
+        }
+
+/* Trang giới thiệu */
+.about-us {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+/* Căn chỉnh lưới */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-6, .col-md-12 {
+    padding: 15px;
+}
+/* Nút trang liên hệ */
+/* Cập nhật để bỏ gạch chân hoàn toàn */
+.btn-contact {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold; /* Chữ in đậm */
+    color: #fff !important; /* Đảm bảo màu chữ */
+    background: #007bff;
+    border-radius: 5px;
+    text-decoration: none !important; /* Bỏ gạch chân */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+    /* Hover */
+    .btn-contact:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+        text-decoration: none !important;
+    }
+
+    /* Chặn tất cả dấu gạch chân trên mọi trạng thái */
+    .btn-contact:focus, .btn-contact:active, .btn-contact:visited {
+        text-decoration: none !important;
+    }

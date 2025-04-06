@@ -16,6 +16,7 @@ public partial class Review
     public string? Comment { get; set; }
 
     public DateTime? ReviewDate { get; set; }
+    public bool IsVisible { get; set; } = true;
 
     public virtual Product Product { get; set; } = null!;
 

@@ -1,27 +1,209 @@
 ﻿@model cnpm.ViewModels.CheckoutViewModel
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Chú ý!</strong> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (Model == null)
+{
+    <p class="text-danger">Không thể tải thông tin sản phẩm!</p>
+    <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Quay về trang chủ</a>
+}
+else
+{
+    <h2>Nhập thông tin nhận hàng</h2>
 
-<h2>Nhập thông tin nhận hàng</h2>
+    <form id="checkoutForm" asp-action="ConfirmOrder" method="post">
+        @Html.AntiForgeryToken()
 
-<form asp-action="ConfirmOrder" method="post">
-    <input type="hidden" asp-for="ProductId" />
-    <input type="hidden" asp-for="Price" />
+        <input type="hidden" asp-for="ProductId" />
+        <input type="hidden" asp-for="Price" />
 
-    <label>Sản phẩm:</label>
-    <input type="text" class="form-control" value="@Model.ProductName" readonly />
+        <label>Sản phẩm:</label>
+        <input type="text" class="form-control" asp-for="ProductName" readonly />
 
-    <label>Số lượng:</label>
-    <input type="number" class="form-control" asp-for="Quantity" min="1" />
+        <label>Số lượng:</label>
+        <input type="number" class="form-control" asp-for="Quantity" min="1" required />
 
-    <h4>Thông tin nhận hàng</h4>
+        <h4>Thông tin nhận hàng</h4>
 
-    <label>Họ tên:</label>
-    <input type="text" class="form-control" asp-for="UserInformation.FullName" required />
+        <label>Họ tên:</label>
+        <input type="text" class="form-control" asp-for="UserInformation.FullName" value="@Model.UserInformation?.FullName"
+               required pattern="^[A-Za-zÀ-ỹ\s]+$" title="Họ tên không được chứa số hoặc ký tự đặc biệt" />
 
-    <label>Số điện thoại:</label>
-    <input type="text" class="form-control" asp-for="UserInformation.PhoneNumber" required />
+        <label>Số điện thoại:</label>
+        <input type="text" class="form-control" asp-for="UserInformation.PhoneNumber" value="@Model.UserInformation?.PhoneNumber"
+               required pattern="^0\d{9}$" title="Số điện thoại phải có 10 chữ số và bắt đầu bằng 0" />
 
-    <label>Địa chỉ:</label>
-    <input type="text" class="form-control" asp-for="UserInformation.ShippingAddress" required />
 
-    <button type="submit" class="btn btn-success mt-3">Xác nhận đặt hàng</button>
-</form>
+        <label>Tỉnh / Thành phố:</label>
+        <select id="province" class="form-control" required></select>
+
+        <label>Quận / Huyện:</label>
+        <select id="district" class="form-control" required></select>
+
+        <label>Phường / Xã:</label>
+        <select id="ward" class="form-control"></select>
+
+        <label>Địa chỉ chi tiết:</label>
+        <input type="text" class="form-control" id="detailAddress" placeholder="Số nhà, đường,..." value="@Model.UserInformation?.ShippingAddress" required />
+
+        <input type="hidden" asp-for="UserInformation.ShippingAddress" id="ShippingAddress" name="UserInformation.ShippingAddress" value="@Model.UserInformation?.ShippingAddress" />
+        <h4>Hình thức thanh toán</h4>
+        <div class="alert alert-info">
+            Thanh toán khi nhận hàng (COD)
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Xác nhận đặt hàng</button>
+    </form>
+}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Load danh sách tỉnh/thành phố
+        fetch("https://provinces.open-api.vn/api/?depth=1")
+            .then(response => response.json())
+            .then(provinces => {
+                let provinceDropdown = document.getElementById("province");
+                provinceDropdown.innerHTML = "<option value=''>Chọn tỉnh</option>";
+                provinces.forEach(province => {
+                    let option = document.createElement("option");
+                    option.value = province.code;
+                    option.text = province.name;
+                    provinceDropdown.appendChild(option);
+                });
+
+                autoFillAddress(provinces);
+            })
+            .catch(error => console.error("Lỗi tải tỉnh/thành phố:", error));
+
+        // Khi chọn tỉnh -> Load huyện
+        document.getElementById("province").addEventListener("change", function () {
+            let provinceCode = this.value;
+            fetch(`https://provinces.open-api.vn/api/p/${provinceCode}?depth=2`)
+                .then(response => response.json())
+                .then(data => {
+                    let districtDropdown = document.getElementById("district");
+                    districtDropdown.innerHTML = "<option value=''>Chọn huyện</option>";
+                    data.districts.forEach(district => {
+                        let option = document.createElement("option");
+                        option.value = district.code;
+                        option.text = district.name;
+                        districtDropdown.appendChild(option);
+                    });
+                })
+                .catch(error => console.error("Lỗi tải huyện/quận:", error));
+        });
+
+        // Khi chọn huyện -> Load xã
+        document.getElementById("district").addEventListener("change", function () {
+            let districtCode = this.value;
+            fetch(`https://provinces.open-api.vn/api/d/${districtCode}?depth=2`)
+                .then(response => response.json())
+                .then(data => {
+                    let wardDropdown = document.getElementById("ward");
+                    wardDropdown.innerHTML = "<option value=''>Chọn xã</option>";
+                    data.wards.forEach(ward => {
+                        let option = document.createElement("option");
+                        option.value = ward.name;
+                        option.text = ward.name;
+                        wardDropdown.appendChild(option);
+                    });
+                })
+                .catch(error => console.error("Lỗi tải xã/phường:", error));
+        });
+
+        // Khi submit form -> Gộp địa chỉ lại
+        document.getElementById("checkoutForm").addEventListener("submit", function () {
+            let province = document.getElementById("province").options[document.getElementById("province").selectedIndex]?.text || "";
+            let district = document.getElementById("district").options[document.getElementById("district").selectedIndex]?.text || "";
+            let ward = document.getElementById("ward").options[document.getElementById("ward").selectedIndex]?.text || "";
+            let detailAddress = document.getElementById("detailAddress").value.trim();
+
+            let fullAddress = [detailAddress, ward, district, province].filter(p => p).join(", ");
+            document.getElementById("ShippingAddress").value = fullAddress;
+        });
+
+        // Tự động điền thông tin địa chỉ cũ
+        function autoFillAddress(provinces) {
+            let savedAddress = document.getElementById("ShippingAddress").value.trim();
+            if (!savedAddress) return;
+
+            let parts = savedAddress.split(", ");
+            let provinceName = "", districtName = "", wardName = "", detail = "";
+
+            // Tìm tỉnh trước
+            provinceName = provinces.find(p => savedAddress.includes(p.name))?.name || "";
+            let provinceCode = provinces.find(p => p.name === provinceName)?.code || null;
+
+            if (provinceCode) {
+                fetch(`https://provinces.open-api.vn/api/p/${provinceCode}?depth=2`)
+                    .then(response => response.json())
+                    .then(provinceData => {
+                        let districtList = provinceData.districts;
+                        districtName = districtList.find(d => savedAddress.includes(d.name))?.name || "";
+                        let districtCode = districtList.find(d => d.name === districtName)?.code || null;
+
+                        if (districtCode) {
+                            fetch(`https://provinces.open-api.vn/api/d/${districtCode}?depth=2`)
+                                .then(response => response.json())
+                                .then(districtData => {
+                                    let wardList = districtData.wards;
+                                    wardName = wardList.find(w => savedAddress.includes(w.name))?.name || "";
+
+                                    // Lọc phần địa chỉ chi tiết
+                                    detail = parts.filter(p => p !== wardName && p !== districtName && p !== provinceName).join(", ");
+
+                                    // Điền dữ liệu vào form
+                                    document.getElementById("detailAddress").value = detail;
+                                    document.getElementById("province").value = provinceCode;
+                                    loadDistricts(provinceCode, districtName, districtCode, wardName);
+                                });
+                        }
+                    });
+            }
+        }
+
+        // Load danh sách huyện sau khi chọn tỉnh
+        function loadDistricts(provinceCode, selectedDistrict, districtCode, selectedWard) {
+            fetch(`https://provinces.open-api.vn/api/p/${provinceCode}?depth=2`)
+                .then(response => response.json())
+                .then(data => {
+                    let districtDropdown = document.getElementById("district");
+                    districtDropdown.innerHTML = "<option value=''>Chọn huyện</option>";
+
+                    data.districts.forEach(district => {
+                        let option = document.createElement("option");
+                        option.value = district.code;
+                        option.text = district.name;
+                        if (district.name === selectedDistrict) {
+                            option.selected = true;
+                        }
+                        districtDropdown.appendChild(option);
+                    });
+
+                    if (districtCode) loadWards(districtCode, selectedWard);
+                });
+        }
+
+        // Load danh sách xã sau khi chọn huyện
+        function loadWards(districtCode, selectedWard) {
+            fetch(`https://provinces.open-api.vn/api/d/${districtCode}?depth=2`)
+                .then(response => response.json())
+                .then(data => {
+                    let wardDropdown = document.getElementById("ward");
+                    wardDropdown.innerHTML = "<option value=''>Chọn xã</option>";
+
+                    data.wards.forEach(ward => {
+                        let option = document.createElement("option");
+                        option.value = ward.name;
+                        option.text = ward.name;
+                        if (ward.name === selectedWard) {
+                            option.selected = true;
+                        }
+                        wardDropdown.appendChild(option);
+                    });
+                });
+        }
+    });
+</script>

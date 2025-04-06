@@ -1,0 +1,48 @@
+﻿@model cnpm.ViewModels.RegisterEmployeeViewModel
+@{
+    Layout = "~/Views/Admin/Admin_Layout.cshtml";
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+
+<h2>Tạo tài khoản cho nhân viên</h2>
+
+<form asp-action="CreateUser" asp-controller="Account" method="post">
+    <input type="hidden" asp-for="EmployeeId" />
+
+
+    <div class="form-group">
+        <label asp-for="Username">Tên đăng nhập</label>
+        <input asp-for="Username" class="form-control" />
+        <span asp-validation-for="Username" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password">Mật khẩu</label>
+        <input asp-for="Password" class="form-control" type="password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Tạo tài khoản</button>
+
+
+    <a asp-action="ManageEmployees" asp-controller="Admin" class="btn btn-secondary">Quay lại</a>
+</form>

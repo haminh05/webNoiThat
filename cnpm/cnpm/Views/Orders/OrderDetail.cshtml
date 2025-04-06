@@ -1,0 +1,69 @@
+﻿@model cnpm.Models.Order
+
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/orderspage.css" asp-append-version="true" />
+}
+
+
+<h2>Chi tiết đơn hàng</h2>
+
+<div class="row">
+    <!-- Cột trái -->
+    <div class="col-md-6">
+        <p><strong>Mã đơn hàng:</strong> @Model.OrderId</p>
+        <p><strong>Ngày đặt:</strong> @Model.OrderDate?.ToString("dd/MM/yyyy HH:mm")</p>
+        <p><strong>Trạng thái:</strong> @Model.Status</p>
+        <p><strong>Tổng tiền:</strong> @Model.TotalPrice.ToString("N0") VNĐ</p>
+    </div>
+
+    <!-- Cột phải -->
+    <div class="col-md-6">
+        <p><strong>Người nhận:</strong> @Model.FullName</p>
+        <p><strong>Số điện thoại:</strong> @Model.PhoneNumber</p>
+        <p><strong>Địa chỉ giao hàng:</strong> @Model.ShippingAddress</p>
+    </div>
+</div>
+
+
+<h3>Sản phẩm trong đơn hàng</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Hình ảnh</th>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tổng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderDetails)
+        {
+            <tr>
+                <td>
+                    <img src="@item.Product.ImagePath" alt="@item.Product.Name" width="50" />
+                </td>
+                <td>@item.Product.Name</td>
+                <td>@item.UnitPrice.ToString("N0") VNĐ</td>
+                <td>@item.Quantity</td>
+                <td>@((item.UnitPrice * item.Quantity).ToString("N0")) VNĐ</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="text-center mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách đơn hàng</a>
+    @if (@Model.Status == "Pending" || @Model.Status == "Shipping")
+    {
+        <form asp-controller="Orders" asp-action="CancelOrder" method="post" class="d-inline">
+            <input type="hidden" name="id" value="@Model.OrderId" />
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn hủy đơn hàng này?');">
+                Hủy đơn hàng
+            </button>
+        </form>
+    }
+</div>

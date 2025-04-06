@@ -1,0 +1,120 @@
+﻿@model X.PagedList.IPagedList<cnpm.Models.Product>
+@using X.PagedList.Mvc.Core
+
+@{
+    ViewData["Title"] = "Quản lý sản phẩm";
+    Layout = "~/Views/Admin/Admin_Layout.cshtml";
+}
+
+<h2>Quản lý sản phẩm</h2>
+
+<a asp-action="Create" class="btn btn-primary mb-3">Thêm sản phẩm mới</a>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-info">@ViewBag.Message</div>
+}
+
+<!-- Form tìm kiếm & lọc danh mục -->
+<form method="get" asp-action="Manage" class="mb-3">
+    <div class="row">
+        <!-- Ô tìm kiếm -->
+        <div class="col-md-4">
+            <input type="text" name="query" class="form-control" placeholder="Tìm kiếm sản phẩm..." value="@Context.Request.Query["query"]" />
+        </div>
+
+        <!-- Dropdown lọc theo danh mục -->
+        <div class="col-md-4">
+            <select name="categoryId" class="form-control">
+                <option value="">Tất cả danh mục</option>
+                @foreach (var categoryId in ViewBag.Categories as List<int>)
+                {
+                    var categoryMapping = ViewBag.CategoryMapping as Dictionary<int, string>;
+                    string categoryName = categoryMapping.ContainsKey(categoryId) ? categoryMapping[categoryId] : $"Danh mục {categoryId}";
+
+                    <option value="@categoryId" selected="@(Context.Request.Query["categoryId"] == categoryId.ToString() ? "selected" : null)">
+                        @categoryName
+                    </option>
+                }
+            </select>
+        </div>
+
+        <!-- Nút tìm kiếm -->
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-primary">Lọc</button>
+            <a asp-action="Manage" class="btn btn-secondary">Reset</a>
+        </div>
+    </div>
+</form>
+
+<!-- Bảng hiển thị sản phẩm -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Tên</th>
+            <th>Mô tả</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Danh mục</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            var categoryMapping = ViewBag.CategoryMapping as Dictionary<int, string>;
+            string categoryName = product.CategoryId.HasValue && categoryMapping.ContainsKey(product.CategoryId.Value)
+            ? categoryMapping[product.CategoryId.Value]
+            : "Không có";
+
+            <tr id="row-@product.ProductId">
+                <td>@product.ProductId</td>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>@product.Stock</td>
+                <td>@categoryName</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@product.ProductId" class="btn btn-warning">Sửa</a>
+
+                    <!-- Form ẩn để gửi yêu cầu xóa -->
+                    <form id="delete-form-@product.ProductId" asp-action="Delete" method="post" style="display: none;">
+                        <input type="hidden" name="id" value="@product.ProductId" />
+                    </form>
+
+                    <!-- Nút xóa với JavaScript xác nhận -->
+                    <button class="btn btn-danger" onclick="confirmDelete(@product.ProductId)">Xóa</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Phân trang -->
+<div class="d-flex justify-content-center">
+    @Html.PagedListPager(Model, page => Url.Action("Manage", new
+        {
+            query = Context.Request.Query["query"],
+            categoryId = Context.Request.Query["categoryId"],
+            page
+        }), new PagedListRenderOptions
+{
+    DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+    DisplayLinkToLastPage = PagedListDisplayMode.Always,
+    DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+    DisplayLinkToNextPage = PagedListDisplayMode.Always,
+    MaximumPageNumbersToDisplay = 5,
+    LiElementClasses = new[] { "page-item" },
+    PageClasses = new[] { "page-link" }
+})
+</div>
+
+<!-- Script xác nhận xóa -->
+<script>
+    function confirmDelete(productId) {
+        if (confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?")) {
+            document.getElementById('delete-form-' + productId).submit();
+        }
+    }
+</script>

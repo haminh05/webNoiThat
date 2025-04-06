@@ -1,0 +1,129 @@
+﻿
+
+/* 🔹 Bảng chi tiết đơn hàng */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .table thead {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+    }
+
+    .table th, .table td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    .table img {
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .table img:hover {
+            transform: scale(1.1);
+        }
+
+    /* 🌟 Hiệu ứng hover cho hàng */
+    .table tbody tr:hover {
+        background: rgba(0, 123, 255, 0.1);
+        transition: 0.3s ease-in-out;
+    }
+
+/* 📦 Nút bấm */
+.btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+/* 📦 Căn chỉnh hàng ngang cho các thẻ */
+.order-stats {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép xuống hàng khi không đủ chỗ */
+    gap: 15px; /* Khoảng cách giữa các thẻ */
+    justify-content: space-between; /* Canh đều các thẻ */
+}
+
+    /* 🏷️ Định dạng từng card */
+    .order-stats .col-md-3 {
+        flex: 1; /* Chia đều không gian */
+        min-width: 200px; /* Đảm bảo kích thước tối thiểu */
+        max-width: 250px; /* Giới hạn chiều rộng */
+    }
+
+    /* 🛠 Điều chỉnh thẻ card */
+    .order-stats .card {
+        text-align: center;
+        border-radius: 10px; /* Bo góc mềm mại */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .order-stats .card:hover {
+            transform: translateY(-5px); /* Hiệu ứng hover */
+        }
+
+    .order-stats .card-body {
+        padding: 15px;
+    }
+
+    /* 📌 Định dạng tiêu đề thẻ */
+    .order-stats .card-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* 🔢 Định dạng số liệu */
+    .order-stats .card-text {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+/* 🔄 Đáp ứng trên màn hình nhỏ */
+@media (max-width: 992px) {
+    .order-stats {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .order-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .order-stats .col-md-3 {
+            max-width: 100%;
+        }
+}
+
+
+
+

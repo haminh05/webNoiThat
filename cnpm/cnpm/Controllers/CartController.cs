@@ -85,10 +85,12 @@ namespace cnpm.Controllers
             {
                 item.Quantity = quantity;
                 SaveCart(cart);
+                return Json(new { success = true, quantity = item.Quantity });
             }
 
-            return RedirectToAction("Index");
+            return Json(new { success = false });
         }
+
         //lấy số sp trong giỏ hàng bann đầu
         public IActionResult GetCartItemCount()
         {
@@ -124,6 +126,8 @@ namespace cnpm.Controllers
                 return RedirectToAction("Index");
             }
 
+            HttpContext.Session.SetObjectAsJson("SelectedCart", selectedItems);
+            
             return View("Checkout", selectedItems);
         }
 
@@ -139,8 +143,16 @@ namespace cnpm.Controllers
                 TempData["Error"] = "Giỏ hàng của bạn đang trống!";
                 return RedirectToAction("Index");
             }
-
+            HttpContext.Session.SetObjectAsJson("SelectedCart", cart);
+           
             return View("Checkout", cart);
         }
+        private void ClearCart()
+        {
+            HttpContext.Session.Remove("Cart");
+            HttpContext.Session.Remove("SelectedCart");
+            Console.WriteLine("🛒 Giỏ hàng đã được xóa khỏi session.");
+        }
+
     }
 }

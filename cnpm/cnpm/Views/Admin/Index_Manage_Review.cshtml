@@ -1,0 +1,53 @@
+﻿@model List<cnpm.Models.Review>
+
+@{
+    ViewData["Title"] = "Quản lý đánh giá sản phẩm";
+    Layout= "~/Admin/Admin_Layout.cshtml"
+}
+
+<h2>Danh sách đánh giá</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Sản phẩm</th>
+            <th>Người dùng</th>
+            <th>Số sao</th>
+            <th>Bình luận</th>
+            <th>Ngày đánh giá</th>
+            <th>Trạng thái</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+                <td>@r.Product.ProductName</td>
+                <td>@r.User.FullName</td>
+                <td>@r.Rating ⭐</td>
+                <td>@r.Comment</td>
+                <td>@r.ReviewDate?.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>
+                    @if (r.IsVisible)
+                    {
+                        <span class="text-success">Hiển thị</span>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Đã ẩn</span>
+                    }
+                </td>
+                <td>
+                    <form asp-action="ToggleVisibility" asp-route-id="@r.ReviewId" method="post" style="display:inline;">
+                        <button class="btn btn-warning btn-sm">Ẩn / Hiện</button>
+                    </form>
+                    <form asp-action="Delete" asp-route-id="@r.ReviewId" method="post" style="display:inline;"
+                          onsubmit="return confirm('Bạn có chắc muốn xóa đánh giá này?');">
+                        <button class="btn btn-danger btn-sm">Xóa</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

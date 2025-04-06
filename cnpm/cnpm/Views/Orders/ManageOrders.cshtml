@@ -1,0 +1,136 @@
+﻿@model List<Order>
+
+@{
+    ViewData["Title"] = "Quản lý đơn hàng";
+    Layout = "~/Views/Admin/Admin_Layout.cshtml";
+
+    var totalOrders = Model.Count;
+    var pendingOrders = Model.Count(o => o.Status == "Pending");
+    var shippingOrders = Model.Count(o => o.Status == "Shipping");
+    var completedOrders = Model.Count(o => o.Status == "Completed");
+    var cancelledOrders = Model.Count(o => o.Status == "Cancelled");
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/orderspage.css" asp-append-version="true" />
+}
+
+<h2 class="text-center">Quản lý đơn hàng</h2>
+
+<div class="mb-3">
+    <form asp-action="ManageOrders" method="get" class="d-flex">
+        <input type="text" name="search" class="form-control me-2" placeholder="Tìm kiếm theo tên khách hàng">
+        <select name="status" class="form-select me-2">
+            <option value="">-- Tất cả trạng thái --</option>
+            <option value="Pending">Chờ xử lý</option>
+            <option value="Shipping">Đang giao</option>
+            <option value="Completed">Hoàn thành</option>
+            <option value="Cancelled">Đã hủy</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Lọc</button>
+    </form>
+</div>
+
+<table class="table table-bordered table-striped">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Khách hàng</th>
+            <th>Ngày đặt</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.FullName</td>
+                <td>@order.OrderDate?.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@order.TotalPrice.ToString("N0") VNĐ</td>
+                <td>
+                    <span class="badge bg-@(order.Status == "Completed" ? "success" : order.Status == "Shipping" ? "warning" : order.Status == "Cancelled" ? "danger" : "secondary")">
+                        @order.Status
+                    </span>
+                </td>
+                <td>
+                    <a asp-controller="Orders" asp-action="OrderDetail" asp-route-id="@order.OrderId" class="btn btn-info">Chi tiết</a>
+                    <form asp-action="UpdateOrderStatus" method="post" class="d-inline">
+                        <input type="hidden" name="id" value="@order.OrderId" />
+
+                        @if (order.Status == "Pending")
+                        {
+                            <button type="submit" class="btn btn-success btn-sm" name="actionType" value="Confirm"
+                                    onclick="return confirm('Bạn có muốn xác nhận đơn hàng này không?');">
+                                Xác nhận đơn hàng
+                            </button>
+
+                            <button type="submit" class="btn btn-danger btn-sm" name="actionType" value="Cancel"
+                                    onclick="return confirm('Bạn có chắc chắn muốn hủy đơn hàng này?');">
+                                Hủy đơn hàng
+                            </button>
+                        }
+                        else if (order.Status == "Shipping")
+                        {
+                            <button type="submit" class="btn btn-danger btn-sm" name="actionType" value="Cancel"
+                                    onclick="return confirm('Bạn có chắc chắn muốn hủy đơn hàng này?');">
+                                Hủy đơn hàng
+                            </button>
+                        }
+                    </form>
+
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="row mb-3 order-stats">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary">
+            <div class="card-body">
+                <h5 class="card-title">Tổng số đơn hàng</h5>
+                <p class="card-text fs-4">@totalOrders</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card text-white bg-secondary">
+            <div class="card-body">
+                <h5 class="card-title">Chờ xử lý</h5>
+                <p class="card-text fs-4">@pendingOrders</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card text-white bg-warning">
+            <div class="card-body">
+                <h5 class="card-title">Đang giao</h5>
+                <p class="card-text fs-4">@shippingOrders</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card text-white bg-success">
+            <div class="card-body">
+                <h5 class="card-title">Hoàn thành</h5>
+                <p class="card-text fs-4">@completedOrders</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card text-white bg-danger">
+            <div class="card-body">
+                <h5 class="card-title">Đã hủy</h5>
+                <p class="card-text fs-4">@cancelledOrders</p>
+            </div>
+        </div>
+    </div>
+</div>

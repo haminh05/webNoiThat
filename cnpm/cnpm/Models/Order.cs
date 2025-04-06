@@ -9,6 +9,12 @@ public partial class Order
 
     public int UserId { get; set; }
 
+    public string FullName { get; set; } = null!;
+
+    public string ShippingAddress { get; set; } = null!;
+
+    public string PhoneNumber { get; set; } = null!;
+
     public DateTime? OrderDate { get; set; }
 
     public decimal TotalPrice { get; set; }
